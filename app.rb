@@ -2,9 +2,6 @@ require 'rubygems'
 require 'sinatra/base'
 require 'slim'
 require 'sass'
-require 'mongoid'
-
-Mongoid.load!("config/mongoid.yml")
 
 Slim::Engine.set_default_options :sections => false
 

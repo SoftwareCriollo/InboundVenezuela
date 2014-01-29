@@ -1,3 +1,68 @@
+@font-face {
+    font-family: 'lobster';
+    src: url('/typography/lobstertwo-regular-webfont.eot');
+    src: url('/typography/lobstertwo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/lobstertwo-regular-webfont.woff') format('woff'),
+         url('/typography/lobstertwo-regular-webfont.ttf') format('truetype'),
+         url('/typography/lobstertwo-regular-webfont.svg#lobster_tworegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('/typography/bebasneue-webfont.eot');
+    src: url('/typography/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/bebasneue-webfont.woff') format('woff'),
+         url('/typography/bebasneue-webfont.ttf') format('truetype'),
+         url('/typography/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adelle-heavy';
+    src: url('/typography/adelle_heavy-webfont.eot');
+    src: url('/typography/adelle_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/adelle_heavy-webfont.woff') format('woff'),
+         url('/typography/adelle_heavy-webfont.ttf') format('truetype'),
+         url('/typography/adelle_heavy-webfont.svg#adelle_hvheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'adelle-semibold';
+    src: url('/typography/adelle_semibold-webfont.eot');
+    src: url('/typography/adelle_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/adelle_semibold-webfont.woff') format('woff'),
+         url('/typography/adelle_semibold-webfont.ttf') format('truetype'),
+         url('/typography/adelle_semibold-webfont.svg#adelle_sbsemibold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vinyl';
+    src: url('/typography/vinylregular-webfont.eot');
+    src: url('/typography/vinylregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/vinylregular-webfont.woff') format('woff'),
+         url('/typography/vinylregular-webfont.ttf') format('truetype'),
+         url('/typography/vinylregular-webfont.svg#vinylregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adelleitalic';
+    src: url('/typography/adelle_lightitalic-webfont.eot');
+    src: url('/typography/adelle_lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/adelle_lightitalic-webfont.woff') format('woff'),
+         url('/typography/adelle_lightitalic-webfont.ttf') format('truetype'),
+         url('/typography/adelle_lightitalic-webfont.svg#adelle_ltlight_italic') format('svg');
+}
+
 //*COLORS*//
 
 $darkgrey: #282827;
@@ -9,7 +74,12 @@ $black: #000000;
 $lightgrey: #e6e5e5;
 $textgrey: #959494;
 
-//*DEFAULT*//
+/*DEFAULT*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
 
 .clear{
 	clear: both;
@@ -17,7 +87,7 @@ $textgrey: #959494;
 
 #wrapper {
 	width: 1024px;
-	margin: 50px auto;
+	margin: 0 auto;
 }
 
 hr {
@@ -26,269 +96,569 @@ hr {
 	height: 1px;
 }
 
-
-//*TYPOGRAPHY*//
-
-h1, h2, h3, h4, p, a, li{
-	font: {
-	family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	weight: normal;
-	
-  }
-	color: $darkgrey;
-	line-height: 1em;	
-
+.left {
+	float: left;
 }
 
-
-h1 {
-	font: {
-	  size: 6em;	
-	}
-	letter-spacing: -6px;
-	margin: 10px 0;
+.right {
+	float: right;
 }
 
-h2 {
-	font: {
-	  size: 4em;	
-	}
-	letter-spacing: -4px;
+/*TYPOGRAPHY*/
+
+.futura h1, .futura h2, .futura h3, .futura h4 {
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 7em;
+	line-height: 0.75em;
 }
 
-h3 {
-	font: {
-	  size: 3em;	
-	}
-	letter-spacing: -3px;	
-	margin: 10px 0 20px 0;
+.futura h2 {
+	font-size: 1.9em;
+	line-height: 1.3em;
 }
 
-h4 {
-	font: {
-	  size: 2em;	
-	}
-	letter-spacing: -0.5px;
-	margin: 10px 0 20px 0;
+.futura h3 {
+	text-transform: none;
+	font-size: 1em;
+	font-weight: 100;
+	letter-spacing: -0.45px;
+	line-height: 2em;
 }
 
-p, a, li {
-	font: {
-	  size: 1.2em;	
-	}
+.futura h4 {
+	text-transform: none;
+	font-size: 1.5em;
+	font-weight: 100;
+	letter-spacing: -0.45px;
 	line-height: 1.5em;
 }
 
-a {
-	color: $orangered;
-	  &:hover { color: $darkgrey; }
-	}
-
-li {
-	line-height: 30px;
+.futura a {
+	color: #dc0101;
 }
 
-//*BUTTONS*//
+.victim .futura h4 {
+	line-height: 2.1em;
+}
 
+.lobster h2 {
+	font-family: "lobster", "helvetica", "sans-serif";
+	color: white;
+	font-size: 4em;
+	line-height: 1.5em;
+}
 
-.button.orange {
-	a{
-		text-decoration: none;
-	}
-	p {
-		margin: 0;
-		font: {
-			size: 1em;
-		}
-		color: $white;
-			
-	}
-  border: 1px solid $orangered;
-	float: left;
-	color: $white;
-	padding: 10px 20px;
-	margin: 20px 0;
-	background: #e37600;
-    border: 1px solid #fc5401;
-	
-	&:hover{
-		background: #fc5401;
-   	    border: 1px solid #fc5401;
-	}
+.ribbon h2, .adelle h3, .adelle h2 {
+	font-family: "adelle-semibold", "arial";
+	color: white;
+	font-size: 1em;
+}
+
+.gillsans h1, .gillsans h2, .gillsans h3 {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 100;
+}
+
+.gillsans h1 {
+	font-size: 5em;
+}
+
+.gillsans h2 {
+	font-size: 1.1em;
+}
+
+.gillsans h3 {
+	font-size: 3em;
+}
+
+.adelle h1 {
+	font-family: "adelle-heavy", "arial";
+	font-size: 3em;
+	color: white;
+	text-transform: uppercase;
+}
+
+.adelle h2 {
+  font-size: 2em !important;
+  line-height: 1em;
+}
+
+.adelle h3, .adelle h2 {
+	font-family: "adelle", "arial";
+	font-size: 1.25em;
+	font-weight: lighter;
+}
+
+.adelle.italic h1{
+	font-family: "adelleitalic", "arial";
+	color: white;
+	font-size: 1.75em;
+	text-transform: none;
+	font-weight: lighter;
+}
+
+.vinyl h1, .vinyl h2, .vinyl h3{
+	font-family: "vinyl", "HelveticaNeue-Light";
+	color: white;
+	font-size: 6em;
+}
+
+.vinyl h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	line-height: 0.85em;
+}
+
+.vinyl h3 {
+	font-size: 3.5em;
+	text-transform: uppercase;
+}
+
+.bebas h1, .bebas h2 {
+	font-family: "bebasneue", "arial";
+	color: white;
+	font-size: 4.8em;
+	line-height: 0.85em;
+}
+
+.bebas h2 {
+	font-size: 2em;
+}
+
+p {
+	font-family: "HelveticaNeue-Light", "Arial";
+	color: white;
+	line-height: 1.5em;
+	font-size: 1.2em;
+}
+
+.circle p {
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+p.small {
+	font-size: 120%;
 }
 
 
-//*LAYOUT*//
+
+/*PITCH*/
+
+.pitch {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.pitch #wrapper {
+	padding: 7% 0 1% 0;
+}
+
+#video_background{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 4000%;
+    max-height:4000%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+/*CONNECTORS*/
+
+.connector{
+	background-image: url('/images/blackbg.png');
+	min-height: 300px;
+	overflow: hidden;
+	padding: 5% 0;
+}
+
+/*NO POLITICS*/
+
+.nopolitics, .quehaces, .victim{
+	text-align: center;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	padding: 5% 0;
+}
+
+.nopolitics p {
+	line-height: 1.5em;
+}
+
+.highlight {
+	text-transform: uppercase;
+}
+
+/*STATS*/
+
+.stats {
+	background-image: url('/images/caracas.jpg');
+	height: 850px;
+}
+
+.module {
+	width: 100%;
+	height: 235px;
+	text-align: center;
+}
+
+.module.borders{
+	padding: 5% 0 0 0;
+	border-top: 8px solid white;
+	border-bottom: 8px solid white;
+	height: 180px;
+}
+
+.module .futura h1 {
+	font-size: 10em;
+}
+
+.module-half {
+	width: 49%;
+}
+
+.module-half.borderright{
+	border-right: 3px solid white;
+	padding: 5% 0;
+}
+
+.gillsans .borders {
+	width: 70%;
+	border-top:3px solid white;
+	border-bottom: 3px solid white;
+	margin: 0 auto;
+	margin-bottom: 3%;
+}
+
+.stats #wrapper {
+	padding: 3% 0;
+}
+
+.circle {
+	width: 190px;
+	height: 130px;
+	border-radius: 100px;
+	border: 4px solid white;
+	padding: 11% 0 0 0;
+	margin: 0 1% 0 10%;
+}
+
+.circle.small{
+	width: 150px;
+	height: 110px;
+	padding: 8% 0 0 0;
+	margin: 5% 0 0 4% ;
+}
+
+.circle.small .bebas h1 {
+	font-size: 3.8em;
+}
+
+.circle.small p{
+	font-size: 1.4em;
+}
+
+.circle.small p.small {
+	font-size: 1em;
+}
+
+.circle.smaller {
+	width: 50px;
+	height: 35px;
+	margin: 0 auto;
+	margin-top: 5%
+}
+
+.ci
+
+.note {
+	width: 100%;
+	margin: 3% 0 0 0;
+}
+
+.ribbon {
+	background-image:url('/images/ribbon.svg');
+	width: 230px;
+	height: 35px;
+	padding: 15px 0 0 0;
+	margin: 3% auto;
+}
+
+.threecolumn {
+	width: 30%;
+	margin: 8% 0 0 0;
+}
+
+.arrow {
+	margin: 0 auto;
+	margin-top: 20%;
+}
+
+/*TESTIMONIAL*/
+
+.testimonialfold {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slideshowleft, .slideshowright{
+	width: 8%;
+	margin: 5% 0 0 0;
+}
+
+.testimonial {
+	width: 80%;
+	text-align: center;
+}
+
+.victim {
+	margin: 0 0 7% 0;
+}
+
+/*FACES*/
+
+.faces {
+	width: 100%;
+	background-image: url('/images/faces.jpg');
+	height: 850px;
+}
+
+.faces-text {
+	width: 70%;
+	margin-top: 15%;
+	padding: 1%;
+	text-align: center;
+}
+
+.faces-text .module {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	height: auto;
+	padding: 3% 0;
+}
+
+.faces-text .adelle h1 {
+	font-size: 2.3em;
+	line-height: 4.5em;
+}
+
+.italica {
+	font-style: italic;
+}
+
+.module-third.smaller{
+	width: 10%;
+	padding: 1%;
+}
+
+.module-third{
+	width: 70%;
+	padding: 1%;
+	text-align: center;
+}
+
+.border-right {
+	border-right: 2px solid white;
+}
+
+.border-left {
+	border-left: 2px solid white;
+}
+
+.faces-text .gillsans h1 {
+	font-size: 1.8em;
+}
+
+/*2014*/
+
+.together {
+	background-image: url('/images/together.svg');
+	width: 300px;
+	height: 175px;
+	padding: 125px 0 0 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*METRICS*/
+
+.metrics {
+	width: 100%;
+	height: 850px;
+	background-image: url('/images/metrics.jpg');
+}
+
+.metrics #wrapper {
+	padding: 5% 0;
+}
+
+.metrics .futura {
+	text-align: center;
+}
 
 .title {
-	width: 100%;
-	border-bottom: 3px solid black;
-	margin: 0 0 40px 0;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	padding: 3% 0;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.twocolumn {
+.metrics .futura h1 {
+	line-height: 1em;
+}
+
+.metrics .text {
 	width: 50%;
-	float: left;
-	margin: 0 0 50px 0;
+	margin: 4% 0 ;
 }
 
+.metrics .text .futura {
+		text-align: left;
+}
 
-//*FORM*//
+.futura-bold h1 {
+	font-family: "Futura-CondensedExtraBold", "futura", "HelveticaNeue-Bold";
+	color: white;
+	font-size: 10em;
+	text-align: center;
+}
 
-form {
+/*INICIATIVAS*/
+
+.quehaces a {
+	color: red;
+}
+
+.quote {
+	text-align: center;
+	margin: 4% 0;
+}
+
+.iniciativas .threecolumn {
+	margin: 0 3% 0 0;
+	text-align: center;
+
+}
+
+.iniciativas .threecolumn a {
+	font-family: "futura", "HelveticaNeue-Light", "arial";
+	color: red;
+	font-size: 1.5em;
+}
+
+.iniciativas .threecolumn a:hover{
+	color: white;
+}
+
+/*CAMBIO*/
+
+.cambio {
+	background-image: url('/images/simon.jpg');
 	width: 100%;
-	padding: 10px !important;
-	background: $white; /* for non-css3 browsers */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$lightgrey'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from($white), to($lightgrey)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  $white,  $lightgrey); /* for firefox 3.6+ */ 
-  border: 1px solid $lightgrey !important;
-  position: relative;
-	margin: 20px 0 50px 0 !important;
+	padding: 3% 0;
 }
 
-form:before, form:after {
-	   content:"";
-	   position:absolute;
-	   z-index:-1;
-	   bottom:8px;
-	   left:10px;
-	   width:60%;
-	   height:20%;
-	   max-width:300px;
-	   -webkit-box-shadow:0 10px 10px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow:0 10px 10px rgba(0, 0, 0, 0.5);
-	   box-shadow:0 10px 10px rgba(0, 0, 0, 0.5);
-	   -webkit-transform:rotate(-3deg);
-	   -moz-transform:rotate(-3deg);
-	   -o-transform:rotate(-3deg);
-	   transform:rotate(-3deg);
-	}
-
-form:after {
-   right:10px;
-   left:auto;
-   -webkit-transform:rotate(3deg);
-   -moz-transform:rotate(3deg);
-   -o-transform:rotate(3deg);
-   transform:rotate(3deg);
+.cambio .title {
+	text-align: center;
+	width: 60%;
 }
 
-
-input, textarea, select {
-	width: 95%;
-	border: 1px solid $lightgrey;
-	height: 35px;
-	padding: 5px 10px;
-	margin: 0 0 10px 0;
-	font:{
-	  	family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-			size: 18px;
-	}
-	color: $textgrey;
-	
+.referendum {
+	text-align: center;
+	width: 70%;
+	margin: 4% auto;
 }
 
-select {
-	width: 99%;
-	height: 40px;
-	font:{
-		size: 1.2em;
-	}
-}
-textarea {
-	height: 100px;
+.referendum .circle {
+	height: 135px;
+	padding: 55px 0 0 0;
+	margin: 3% auto;
 }
 
-label.label_input {
-	width: 95%;
-	position: absolute;
-	top: 1px;
-	right: 1px;
-	bottom: 1px;
-	left: 2px;
-	z-index: 1;
-	padding: 13px 3px 13px 10px;
-	line-height: 20px;
-	white-space: nowrap;
-	cursor: text;
+.button a {
+	background-color: red;
+	padding: 2% 5%;
+	font-family: "futura", "HelveticaNeue-Light", "arial";
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+.button {
+	margin: 5.5% 0;
+}
+
+/*SOCIAL*/
+
+.social .title {
+	width: 80%;
+}
+
+.social {
+	text-align: center;
+}
+
+/*CONTACT*/
+
+.contact {
+	background-image: url('/images/light.png');
+	width: 100%;
+	padding: 5% 0;
+	overflow: hidden;
+}
+
+.contact .title {
+	width: 100%;
+	border-top: solid 3px black;
+	border-bottom: solid 3px black;
+}
+
+.contact .futura h2 {
+	color: black;
+}
+
+.creadopor {
+	text-align: center;
+	margin: 0 0 5% 0;
+}
+
+.contact .adelle.italic h1 {
+	color: black;
+}
+
+.sub-title {
+	width: 100%;
+	text-align: center;
+	margin: 5%;
+}
+
+.sub-title .futura h4 {
+	color: black;
+}
+.twocolumn {
+	width: 45%;
+}
+
+.twocolumn a {
+	font-family: "HelveticaNeue-Light", "arial";
 	display: block;
-	
-	font:{
-		size: 1.1em;
-		family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;		
-	}
-	color: $textgrey;
+	color: black;
+	margin: 0 0 3% 0;
 }
 
-label {
-	font:{
-		size: 1.2em;
-		family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	}
-	color: $textgrey;
-  float: left;	
-}
-
-.input-placeholder {
-	position: relative;
-}
-
-.button.orange.send {
-	width: 30%;
-	margin: 10px 0 10px 150px;
-	line-height: 0;
-	padding: 0 0 5px 0;
-	letter-spacing: 0;
-}
-
-
-
-//*BOX UI*//
-
-.boxui.header, .boxui.box {
-	width: 100%;
-	-webkit-border-radius: 4px 4px 0 0;
-	border-radius: 4px 4px 0 0;
-	background: $white;
-	border: 1px solid $lightgrey;
-	margin: 40px 0 0 0;
-	background: $white; /* for non-css3 browsers */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$lightgrey'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from($white), to($lightgrey)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  $white,  $lightgrey); /* for firefox 3.6+ */ 
-	padding: 10px;
-	
-	p {
-		margin: 0;
-	}
-	
-	}
-
-.boxui.box{
-	-webkit-border-radius: 0 0 4px 4px;
-	border-radius: 0 0 4px 4px;
-  margin: 0;	
-  background: $white;
-}
-
-label, select {
-	font:{
-		size: 1.1em;
-	}
-}
-.radio {
-	
-	width: 5%;
-	float: left;
-	height: 22px;
-}
-
-
-.container p {
-  color: #fff;
-  line-height: 100px;
-  background: #000;
-  text-align: center;
-  margin: 20px 0 0 0;
+.twocolumn a:hover{
+	color: red;
 }
