@@ -206,7 +206,8 @@ p.small {
   background-image: url("/images/blackbg.png");
   min-height: 300px;
   overflow: hidden;
-  padding: 5% 0; }
+  padding: 5% 0;
+  clear: both; }
 
 /*NO POLITICS*/
 .nopolitics, .quehaces, .victim {
@@ -248,7 +249,7 @@ p.small {
 
 .module-half.borderright {
   border-right: 3px solid white;
-  padding: 5% 0; }
+  padding: 4% 0; }
 
 .gillsans .borders {
   width: 70%;
