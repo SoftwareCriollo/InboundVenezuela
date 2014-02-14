@@ -554,3 +554,43 @@ h1.font-homi{
   display:inline-block;
   vertical-align: middle;
 }
+
+.fb-share-button{
+  margin-right: 30px !important
+}
+
+.fb-share-button > span{
+  height: 24px !important
+}
+
+.btn_socials {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.btn_socials > *{
+    display: inline-block !important
+    vertical-align: middle !important
+    margin: 0 4px 15px !important
+}
+.btn_socials   #twitter-widget-0{
+    width: 82px !important    
+  }
+.btn_socials   .fb-share-button{
+    width: 56px !important    
+  }
+.btn_socials   .fb-share-button > span{
+    height: 24px !important 
+  }
+
+.btn_socials   a[data-pin-do="buttonBookmark"]{
+    width: 40px    
+  }
+
+.btn_socials   .email{
+    width: 100px;
+    font-family: avenir;
+    color: white;
+    border: 1px solid white;
+    padding: 0.2em 1em;
+  }
