@@ -5,6 +5,8 @@ gem 'slim'
 gem 'sass'
 gem 'unicorn'
 gem 'shotgun'
+gem 'mongoid', '~> 2.4'
+gem 'activemodel', '3.1.0'
 
 group :development do
 end

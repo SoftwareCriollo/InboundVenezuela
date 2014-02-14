@@ -1,24 +1,25 @@
-.pitch
-  video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" 
-    source src="/images/test-small.mov" type="video/webm"
-    source src="/images/test-small.mov" type="video/mp4"
-    img src="/images/blurvideo.png"
-  #wrapper
-    .futura 
-      h1 Venezuela
-    .lobster
-      h2 necesita
-    img src="/images/paz.png"
+a.smooths href="#nopolitics"
+  .pitch#pitch
+    video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" 
+      source src="/images/test-small.mov" type="video/webm"
+      source src="/images/test-small.mov" type="video/mp4"
+      img src="/images/blurvideo.png"
+    #wrapper
+      .futura 
+        h1 Venezuela
+      .lobster
+        h2 necesita
+      img src="/images/paz.png"
 
-.connector
-  #wrapper
-    .nopolitics
-      .futura
-        h2 Esta no es una pieza con fines de propaganda política.
-      p El pueblo venezolano eligió el gobierno actual y eso lo respetamos enormemente.
-      .futura
-        h4 Exigimos que el gobierno de de la República Bolivariana de Venezuela asuma la inseguridad que vivimos <span class="highlight">todos los Venezolanos</span>, dé propuestas y trabajemos juntos, como una sola Venezuela.
-.stats
+  .connector
+    #wrapper
+      .nopolitics#nopolitics
+        .futura
+          h2 Esta no es una pieza con fines de propaganda política.
+        p El pueblo venezolano eligió el gobierno actual y eso lo respetamos enormemente.
+        .futura
+          h4 Exigimos que el gobierno de de la República Bolivariana de Venezuela asuma la inseguridad que vivimos <span class="highlight">todos los Venezolanos</span>, dé propuestas y trabajemos juntos, como una sola Venezuela.
+.stats#stats
   #wrapper
     .module
       .module-half.borderright.left
@@ -77,7 +78,7 @@
       .victim
         .futura
           h2 haz sido víctima de un asalto, secuestro u homicidio?
-          h4 <a href="">Comparte tu historia aquí</a> y será publicada en este espacio.
+          h4 <a href="https://docs.google.com/forms/d/1-A0Lkm7lxuN_gm398dueucKj8LE3bzmMWvLSAt9j6EU/viewform" target="_blank">Comparte tu historia aquí</a> y será publicada en este espacio.
         .helvetica 
           p Tu información en 100% confidencial, por eso ni pedimos tu nombre.
 
@@ -88,7 +89,7 @@
           h1 “Los atracadores ingresaron al local de venta de artículos de computación. Un empleado observó la situación irregular llamó a la policía, mientras otros seis que estaban en un segundo nivel, se encerraron en los baños. Los ladrones lograron dominar a tres trabajadores. Al no poder huir se entregaron.”
       .slideshowright.right
         img src="/images/arrow-right.svg"
-.faces
+.faces#faces
   #wrapper
     .faces-text.left
       .module.borders
@@ -122,7 +123,7 @@
     .together
       .gillsans
         h3 2014
-.metrics
+.metrics#metrics
   #wrapper
     .clear
     .title
@@ -143,7 +144,7 @@
       .futura
         h2 ¿QUÉ ESTás haciendo TU para eliminar la delincuencia?
         h4 Estas son algunas iniciativas de cáracter social que otros venezolanos han comenzado. ¡Apóyalos!
-      p Si tienes alguna iniciativa que quisieras compartir. <a href="">Contáctanos.</a>
+      p Si tienes alguna iniciativa que quisieras compartir. <a href="mailto:venezuela@softwarecriollo.com">Contáctanos.</a>
     .quote
       .adelle.italic
         h1 “Sé el cambio que quieres ver en el mundo”
@@ -162,7 +163,7 @@
         a href="http://www.facebook.com/pages/Yoga-en-los-barrios/480341285396939" target="_blank"
           img src='/images/yogaenlosbarrios.jpg'
         a href="http://www.facebook.com/pages/Yoga-en-los-barrios/480341285396939" target="_blank" Yoga en los barrios
-.cambio
+.cambio#cambio
   #wrapper
     .title
       .futura
@@ -173,10 +174,10 @@
         h4 Si el gobierno venezolano no puede contra el hampa común, busquemos una solución y que el pueblo llame a referendum.
       .circle
         .bebas
-          h1 1800
+          h1#votos_count = Vote.vote_count
           h2 votos
       .button
-        a href=""vota si estas de acuerdo
+        a#votar href="#cambio" vota si estas de acuerdo
       .quote
         .adelle.italic
           h1 "El sistema de gobierno más perfecto, es aquel que produce mayor suma de felicidad posible, mayor suma de seguridad social y mayor suma de estabilidad política".
@@ -191,11 +192,19 @@
           h4 comparte esta página para que el mundo entero nos lea.
       .social
         img src="/images/social.jpg"
+
+        .fb-root
+        .fb-share-button data-href="http://seguridadvenezuela.herokuapp.com/" data-type="button_count"
+        a.twitter-share-button href="https://twitter.com/share"   data-via="twitterapi" data-lang="en" Tweet
+        .g-plusone data-href="http://seguridadvenezuela.herokuapp.com/"
+        a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-config="beside"  data-pin-height="28" data-pin-do="buttonPin"  
+          img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png"
+
       .quote
         .adelle.italic
           h2 ❤
           h1 por una mejor Venezuela
-.contact
+.contact#contact
   #wrapper
     .creadopor
       .adelle.italic
@@ -203,7 +212,7 @@
         img src="/images/logo.svg"
     .title
       .futura
-        h2 Si quieres enviarnos un mensaje, sugerencia o sÓlo saludar, <a href="">escrÍbenos aquÍ</a>
+        h2 Si quieres enviarnos un mensaje, sugerencia o sÓlo saludar, <a href="mailto:venezuela@softwarecriollo.com" >escrÍbenos aquÍ</a>
     .creditos
       .sub-title
         .futura
