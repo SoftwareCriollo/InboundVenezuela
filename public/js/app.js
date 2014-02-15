@@ -13,5 +13,10 @@ $(function(){
 		}
 	});
 
-	$(".smooths").smoothscrolling();
+	$("#slider").slider({
+		control_next: '.slideshowleft.left a',
+		control_back: '.slideshowright.right a',
+		content: '.testimonialfold'
+	});
+
 });

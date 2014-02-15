@@ -1,7 +1,10 @@
 .pitch#pitch
-  video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" 
+  video id="video_background" preload="auto" poster="/images/blurvideo.png"  autoplay="true" loop="loop" muted="muted" volume="0" 
     source src="/images/test-small.mov" type="video/webm"
-    source src="/images/test-small.mov" type="video/mp4"
+    source src="/images/test-small.mp4" type="video/mp4"
+    source src="/images/test-small.ogg" type="video/ogg"
+    source src="/images/test-small.webm" type="video/webm"
+
     img src="/images/blurvideo.png"
   #wrapper
     .futura 
@@ -82,12 +85,19 @@
           p Tu información en 100% confidencial, por eso ni pedimos tu nombre.
 
       .slideshowleft.left
-        img src="/images/arrow-left.svg"
+        a href="#"
+          img.slider_back src="/images/arrow-left.svg"
       .testimonial.left
-        .adelle.italic
-          h1 “Los atracadores ingresaron al local de venta de artículos de computación. Un empleado observó la situación irregular llamó a la policía, mientras otros seis que estaban en un segundo nivel, se encerraron en los baños. Los ladrones lograron dominar a tres trabajadores. Al no poder huir se entregaron.”
+        #slider
+          .adelle.italic
+            h1 “Los atracadores ingresaron al local de venta de artículos de computación. Un empleado observó la situación irregular llamó a la policía, mientras otros seis que estaban en un segundo nivel, se encerraron en los baños. Los ladrones lograron dominar a tres trabajadores. Al no poder huir se entregaron.”
+          .adelle.italic
+            h1 “1Los atracadores ingresaron al local de venta de artículos de computación. Un empleado observó la situación irregular llamó a la policía, mientras otros seis que estaban en un segundo nivel, se encerraron en los baños. Los ladrones lograron dominar a tres trabajadores. Al no poder huir se entregaron.”
+          .adelle.italic
+            h1 “2Los atracadores ingresaron al local de venta de artículos de computación. Un empleado observó la situación irregular llamó a la policía, mientras otros seis que estaban en un segundo nivel, se encerraron en los baños. Los ladrones lograron dominar a tres trabajadores. Al no poder huir se entregaron.”
       .slideshowright.right
-        img src="/images/arrow-right.svg"
+        a href="#"
+          img.slider_next src="/images/arrow-right.svg"
 .faces#faces
   #wrapper
     .faces-text.left
