@@ -42,7 +42,10 @@
 * {
   margin: 0;
   padding: 0; }
-
+  
+img{
+  border: 0;
+}
 .clear {
   clear: both; }
 
@@ -595,3 +598,5 @@ h1.font-homi{
     border: 1px solid white;
     padding: 0.2em 1em;
   }
+
+
