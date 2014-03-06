@@ -413,7 +413,7 @@ p.small {
 
 .slideshowleft, .slideshowright{
 	width: 8%;
-	margin: 5% 0 0 0;
+	margin: 6% 0 0 0;
 }
 
 .testimonial {
@@ -609,7 +609,19 @@ p.small {
 
 .social {
 	text-align: center;
+	margin-top: 40px;
 }
+
+.social_buttons {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fb-share-button {
+margin-right: 30px !important;
+vertical-align: bottom; width: 116px; height: 24px;
+}
+
 
 /*CONTACT*/
 
