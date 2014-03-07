@@ -177,11 +177,16 @@ p {
 p.small {
   font-size: 120%; }
 
+img {
+  border: 0; }
+
 /*PITCH*/
 .pitch {
   width: 100%;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  background-size: cover; }
 
 .pitch #wrapper {
   padding: 7% 0 1% 0; }
@@ -204,7 +209,8 @@ p.small {
   background-image: url("/images/blackbg.png");
   min-height: 300px;
   overflow: hidden;
-  padding: 5% 0; }
+  padding: 5% 0;
+  clear: both; }
 
 /*NO POLITICS*/
 .nopolitics, .quehaces, .victim {
@@ -222,7 +228,9 @@ p.small {
 /*STATS*/
 .stats {
   background-image: url("/images/caracas.jpg");
-  height: 850px; }
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .module {
   width: 100%;
@@ -243,7 +251,7 @@ p.small {
 
 .module-half.borderright {
   border-right: 3px solid white;
-  padding: 5% 0; }
+  padding: 4% 0; }
 
 .gillsans .borders {
   width: 70%;
@@ -261,6 +269,14 @@ p.small {
   border-radius: 100px;
   border: 4px solid white;
   padding: 11% 0 0 0;
+  margin: 0 1% 0 10%; }
+
+.circle.left.homi {
+  width: 220px;
+  height: 160px;
+  border-radius: 120px;
+  border: 4px solid white;
+  padding: 60px 0 0 0;
   margin: 0 1% 0 10%; }
 
 .circle.small {
@@ -311,7 +327,7 @@ p.small {
 
 .slideshowleft, .slideshowright {
   width: 8%;
-  margin: 6% 0 0 0; }
+  margin: 5% 0 0 0; }
 
 .testimonial {
   width: 80%;
@@ -324,7 +340,10 @@ p.small {
 .faces {
   width: 100%;
   background-image: url("/images/faces.jpg");
-  height: 850px; }
+  height: 850px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .faces-text {
   width: 70%;
@@ -376,6 +395,9 @@ p.small {
 .metrics {
   width: 100%;
   height: 850px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-image: url("/images/metrics.jpg"); }
 
 .metrics #wrapper {
@@ -432,6 +454,9 @@ p.small {
 .cambio {
   background-image: url("/images/simon.jpg");
   width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   padding: 3% 0; }
 
 .cambio .title {
@@ -519,3 +544,56 @@ p.small {
 
 .twocolumn a:hover {
   color: red; }
+
+.fb-share-button {
+  margin-right: 20px; }
+
+.smooths {
+  text-decoration: none; }
+
+.module-circle {
+  height: 255px; }
+
+.module-circle .module-half.borderright {
+  padding: 6% 0; }
+
+h1.font-homi {
+  font-size: 4.4em; }
+
+.social_buttons {
+  display: inline-block;
+  vertical-align: middle; }
+
+.fb-share-button {
+  margin-right: 30px !important; }
+
+.fb-share-button > span {
+  height: 24px !important; }
+
+.btn_socials {
+  margin: 0 auto;
+  width: 400px; }
+
+.btn_socials > * {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 4px 15px !important; }
+
+.btn_socials #twitter-widget-0 {
+  width: 82px !important; }
+
+.btn_socials .fb-share-button {
+  width: 56px !important; }
+
+.btn_socials .fb-share-button > span {
+  height: 24px !important; }
+
+.btn_socials a[data-pin-do="buttonBookmark"] {
+  width: 40px; }
+
+.btn_socials .email {
+  width: 100px;
+  font-family: avenir;
+  color: white;
+  border: 1px solid white;
+  padding: 0.2em 1em; }
