@@ -73,6 +73,7 @@ $white: #ffffff;
 $black: #000000;
 $lightgrey: #e6e5e5;
 $textgrey: #959494;
+$red: #dc0101;
 
 /*DEFAULT*/
 
@@ -136,7 +137,11 @@ hr {
 }
 
 .futura a {
-	color: #dc0101;
+	color: $red;
+}
+
+.futura a:hover {
+	color: black;
 }
 
 .victim .futura h4 {
@@ -244,8 +249,6 @@ p {
 p.small {
 	font-size: 120%;
 }
-
-
 
 /*PITCH*/
 
@@ -642,9 +645,17 @@ vertical-align: bottom; width: 116px; height: 24px;
 	color: black;
 }
 
-.creadopor {
+.creadopor{
 	text-align: center;
 	margin: 0 0 5% 0;
+
+	a{
+		color: $red !important;
+	}
+
+	a:hover{
+		color: black !important;
+	}
 }
 
 .contact .adelle.italic h1 {

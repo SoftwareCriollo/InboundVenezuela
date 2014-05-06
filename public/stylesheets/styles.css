@@ -90,6 +90,9 @@ hr {
 .futura a {
   color: #dc0101; }
 
+.futura a:hover {
+  color: black; }
+
 .victim .futura h4 {
   line-height: 2.1em; }
 
@@ -496,6 +499,10 @@ p.small {
 .creadopor {
   text-align: center;
   margin: 0 0 5% 0; }
+  .creadopor a {
+    color: #dc0101 !important; }
+  .creadopor a:hover {
+    color: black !important; }
 
 .contact .adelle.italic h1 {
   color: black; }
